@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>테이블 관련 요소</title>
+    <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link rel="preload" as="font" href="/src/assets/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/src/assets/font/suit/SUIT-Variable.css" />
+    <style>
+      body {
+        font-family: 'SUIT Variable', sans-serif;
+      }
+      .table-1{
+
+      }
+    </style>
   </head>
   <body>
     <a href="/index.html">메인 페이지 이동</a>
     <br />
+    <h1>테이블 관련 요소</h1>
+    <table class="table-1">
+      <tr>
+        <th scope="col">이름</th>
+        <th scope="col">국어</th>
+        <th scope="col">수학</th>
+      </tr>
+      <tr>
+        <th scope="row">홍길동</th>
+        <td>80</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td scope="row">김영희</td>
+        <td>70</td>
+        <td>100</td>
+      </tr>
+    </table>
   </body>
 </html>

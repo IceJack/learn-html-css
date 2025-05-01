@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>국민 내일배움카드 소개</title>
+
+    <!-- 외부 스타일시트와 폰트 등 연결 (선택) -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <!-- defer: HTML 파싱 후 실행 -->
+  </head>
+  <body>
+    <!-- 상단 영역 -->
+    <header>
+      <h1>내일배움카드</h1>
+      <nav>
+        <!-- 시맨틱 내비게이션 -->
+        <a href="#intro">소개</a>
+        <a href="#details">자세히</a>
+        <a href="#apply">신청</a>
+      </nav>
+    </header>
+
+    <!-- 주요 콘텐츠 -->
+    <main>
+      <!-- 소개 섹션 -->
+      <section id="intro">
+        <h2>국민 내일배움카드란?</h2>
+        <p>
+          내일배움카드는 국민이 스스로 직업 능력을 개발할 수 있도록 훈련비 등을
+          지원하는 제도입니다.
+        </p>
+
+        <figure>
+          <img src="card.png" alt="국민 내일배움카드 이미지" />
+          <figcaption>국민 내일배움카드 이미지</figcaption>
+        </figure>
+      </section>
+
+      <!-- 상세 정보 펼침 -->
+      <section id="details">
+        <h2>지원 상세 정보</h2>
+        <details>
+          <summary>내일배움카드 지원 내용 보기</summary>
+          <ul>
+            <li>최대 300만원 훈련비 지원</li>
+            <li>자격 무관, 누구나 신청 가능</li>
+            <li>훈련과정 자율 선택 가능</li>
+          </ul>
+        </details>
+      </section>
+
+      <!-- 신청 폼 -->
+      <section id="apply">
+        <h2>신청하기</h2>
+        <form>
+          <div>
+            <label for="name">이름</label>
+            <input id="name" type="text" name="name" required />
+          </div>
+          <div>
+            <label for="email">이메일</label>
+            <input id="email" type="email" name="email" required />
+          </div>
+          <div>
+            <label for="course">희망 수강 분야</label>
+            <select id="course" name="course">
+              <option value="">선택</option>
+              <option value="frontend">프론트엔드</option>
+              <option value="backend">백엔드</option>
+              <option value="data">데이터 분석</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" id="agree" required />
+            <label for="agree">개인정보 수집 동의</label>
+          </div>
+          <div>
+            <button type="submit" accesskey="s">신청하기</button>
+            <!-- accesskey -->
+          </div>
+        </form>
+      </section>
+
+      <!-- 설명 영상 -->
+      <section>
+        <h2>설명 영상</h2>
+        <figure>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/영상주소"
+            title="내일배움카드 소개 영상"
+            allowfullscreen
+          ></iframe>
+          <figcaption>카드 제도 설명 영상</figcaption>
+        </figure>
+      </section>
+
+      <!-- 혜택 팝업 버튼 -->
+      <section>
+        <h2>🎁 깜짝 혜택</h2>
+        <button id="openDialog">혜택 보기</button>
+        <dialog id="benefitDialog">
+          <h3>특별 혜택</h3>
+          <p>선착순 100명에게 온라인 강의 쿠폰 지급!</p>
+          <button id="closeDialog">닫기</button>
+        </dialog>
+      </section>
+    </main>
+
+    <!-- 바닥글 -->
+    <footer>
+      <address>
+        고용노동부 | 대표전화: 1350 | 이메일:
+        <a href="mailto:help@moel.go.kr">help@moel.go.kr</a>
+      </address>
+      <small>&copy; 2025 내일배움카드 지원센터</small>
+    </footer>
+
+    <!-- 팝업 열고 닫는 JavaScript -->
+    <script>
+      const dialog = document.getElementById("benefitDialog");
+      document.getElementById("openDialog").addEventListener("click", () => {
+        dialog.showModal();
+      });
+      document.getElementById("closeDialog").addEventListener("click", () => {
+        dialog.close();
+      });
+    </script>
+  </body>
+</html>

@@ -1,28 +1,24 @@
 /* 웹 관련 용어 - position 예제 */
 .term {
   background: #ffc;
+  padding-right: 76px;
   position: relative;
   width: 30%;
 
-  .term-wrapper {
-    background: pink;
-    margin-right: 76px;
-  }
-
-  .term-subject {
+  em {
     color: #296897;
     font-size: .875rem;
     font-weight: 700;
     line-height: 1.5;
   }
 
-  .term-brief {
+  p {
     font-size: .875rem;
     line-height: 1.5;
     color: #181818;
   }
 
-  .term-thumbnail {
+  img {
     background: lime;
     position: absolute;
     top: 0;

@@ -5,10 +5,8 @@ body {
 
 /* 용어 컴포넌트 스타일 */
 .term {
-  background: #ffc;
   padding-left: 76px;
   position: relative;
-  width: 30%;
   min-height: 68px;
 
   em {
@@ -25,7 +23,6 @@ body {
   }
 
   img {
-    background: lime;
     position: absolute;
     top: 0;
     left: 0;
@@ -34,11 +31,26 @@ body {
 
 /* 용어 섹션 스타일링 */
 .term-section {
-  background: gray;
+  background: #ccc linear-gradient(#ccc, #eee);
   border: 1px solid #555;
-
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 16.25rem;
 
   h2 {
     font-size: 1rem;
+  }
+
+  .term {
+    margin-top: 1rem;
+
+    &:nth-of-type(even) {
+      padding-inline: 0 68px;
+
+      img {
+        left: initial;
+        right: 0
+      }
+    }
   }
 }

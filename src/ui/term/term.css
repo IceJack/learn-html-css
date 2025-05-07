@@ -1,0 +1,44 @@
+/* 웹 관련 용어 - position 예제 */
+body {
+  margin: 50px;
+}
+
+/* 용어 컴포넌트 스타일 */
+.term {
+  background: #ffc;
+  padding-left: 76px;
+  position: relative;
+  width: 30%;
+  min-height: 68px;
+
+  em {
+    color: #296897;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #181818;
+  }
+
+  img {
+    background: lime;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* 용어 섹션 스타일링 */
+.term-section {
+  background: gray;
+  border: 1px solid #555;
+
+
+  h2 {
+    font-size: 1rem;
+  }
+}

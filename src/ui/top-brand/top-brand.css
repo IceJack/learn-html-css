@@ -2,3 +2,22 @@
 body {
   margin: 50px;
 }
+
+/* 상품 아이템 컴포넌트 */
+.top-brand-item {
+
+  div {
+    background: #ccc;
+    border-radius: .5rem;
+  }
+
+  img {
+    /* auto margin 기법 */
+    margin-inline: auto;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}

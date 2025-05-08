@@ -1,1 +1,16 @@
-/* 멋사 프론트엔드 부트캠프 14기 명단 */
+/* 테이블 스타일링 */
+body {
+  margin: 50px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

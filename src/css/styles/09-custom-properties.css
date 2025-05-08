@@ -1,1 +1,25 @@
 /* CSS 변수 */
+:root {
+  --main-color: rgb(52, 44, 109);
+  --red: rgb(47, 144, 93);
+
+}
+
+
+body {
+  margin: 50px;
+  background: #ffc;
+  color: var(--main-color);
+}
+
+a {
+  border: 1px solid var(--main-color);
+
+  span {
+    color: var(--red);
+  }
+}
+
+h1 {
+  box-shadow: 5px 5px 5px 5px var(--red);
+}

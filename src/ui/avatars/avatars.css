@@ -33,10 +33,11 @@ body {
 
 /* 인터렉션이 있는 아바타 */
 .avatar-button {
+  --size: 80px;
   border: 0;
   padding: 0;
   background: transparent;
-  width: 100px;
+  width: var(--size);
   position: relative;
 
   img {
@@ -57,5 +58,26 @@ body {
 
   &.is-active::after {
     background: rgb(3, 81, 36);
+  }
+}
+
+/* 아바타 리스트 */
+.avatars-list {
+  border: 1px solid var(--gray);
+  padding: 26px 40px;
+
+  ul {
+    width: 380px;
+    margin: 0 auto;
+    display: flow-root;
+  }
+
+  li {
+    margin: 10px 0 10px 20px;
+    float: left;
+
+    &:nth-child(4n+1) {
+      margin-left: 0;
+    }
   }
 }

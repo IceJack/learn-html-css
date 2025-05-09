@@ -25,7 +25,7 @@ body {
     right: 2px;
 
     &.is-active {
-      background: rgb(3, 81, 36);
+      background: var(--dark-green);
     }
   }
 
@@ -57,7 +57,7 @@ body {
   }
 
   &.is-active::after {
-    background: rgb(3, 81, 36);
+    background: var(--dark-green);
   }
 }
 

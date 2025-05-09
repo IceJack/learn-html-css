@@ -1,3 +1,30 @@
+:root{
+  /* 웹카페 색상 테마 */
+  --white: #fff;
+  --black: #181818;
+  --gray: #7a7a7a;
+  --orange-100: #e8852e;
+  --orange-200: #ed552f;
+  --yellow: #ff0;
+
+  /* 글자 크기 */
+  --text-13: .8125rem;
+  --text-14: .875rem;
+  --text-15: .9375rem;
+  
+  /* 줄 높이 */
+  --leading-base: 1.5;
+
+  /* 여백 및 간격 */
+  --spacing-2: .125rem;
+  --spacing-4: .25rem;
+  --spacing-6: .375rem;
+  --spacing-8: .5rem;
+  --spacing-10: .625rem;
+  --spacing-12: .75rem;
+}
+
+
 /* 폼 스타일링 */
 body{
   margin: 50px;
@@ -9,4 +36,22 @@ body{
   > div{
     margin-block: 1em;
   }
+}
+
+/* 입력서식 컴포넌트 스타일링 */
+.form-input{
+ /* ... */
+}
+
+/* 버튼 컴포넌트 스타일링 */
+.fill-button{
+ /* ... */
+}
+.outline-button{
+ /* ... */
+}
+
+/* 하이퍼링크 컴포넌트 */
+.icon-link{
+  /* ... */
 }

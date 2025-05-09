@@ -40,18 +40,60 @@ body{
 
 /* 입력서식 컴포넌트 스타일링 */
 .form-input{
- /* ... */
+ --input-color: var(--gray);
+ --label-size: 56px;
+
+ font-size: var(--text-14);
+ line-height: var(--leading-base);
+ 
+ label{
+  min-width: var(--label-size);
+  display: inline-block;
+ }
+
+ input{
+  border: 1px solid var(--input-color);
+  border-radius: 4px;
+  width: calc(100% - var(--label-size));
+ }
 }
 
 /* 버튼 컴포넌트 스타일링 */
-.fill-button{
- /* ... */
+/* 공통 버튼 컴포넌트 스타일링 */
+[type="button"]{
+  border: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 4px;
+  font-size: var(--text-13);
+  line-height: var(--leading-base);
 }
+
+.fill-button{
+  --fill-color: var(--black);
+
+  background: var(--fill-color);
+  color: var(--white);
+  padding: 4px 12px;
+  border: 1px solid var(--fill-color);
+}
+
 .outline-button{
- /* ... */
+  --current-color: var(--orange-200);
+
+ border: 1px solid currentColor;
+ color: var(--current-color);
+ padding: 4px 12px;
 }
 
 /* 하이퍼링크 컴포넌트 */
 .icon-link{
-  /* ... */
+  --icon-color: var(--orange-200);
+
+  font-size: var(--text-13);
+  
+  span{
+    font-weight: bold;
+    color: var(--icon-color);
+  }
 }

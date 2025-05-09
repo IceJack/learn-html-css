@@ -1,0 +1,12 @@
+/* 폼 스타일링 */
+body{
+  margin: 50px;
+}
+
+/* 컴포넌트 컨테이너 */
+.component-wrapper{
+
+  > div{
+    margin-block: 1em;
+  }
+}

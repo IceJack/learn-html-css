@@ -23,7 +23,7 @@ div{
 
 /* flex를 활용할 경우 */
 .lion{
-  inline-size: 500px;
+  inline-size: 50%;
   block-size: 200px;
   margin-block: 20px;
   box-shadow: 0 0 0 10px red;
@@ -44,12 +44,21 @@ div{
     /* flex-basis: 150px;
     flex-shrink: 1;
     flex-grow: 1; */
-    flex: 1 1 150px;
+    flex: 1 1 0;
   }
 
+  .lion-item:nth-child(1){
+    flex-grow: 1;
+  }
+  .lion-item:nth-child(2){
+    flex-grow: 2;
+  }
+  .lion-item:nth-child(3){
+    flex-grow: 3;
+  }
   .lion-item:nth-child(4){
-    /* flex-grow: 2; */
-    flex-shrink: 2;
+    flex-grow: 4;
+    /* flex-shrink: 2; */
   }
 }
 .frontend{

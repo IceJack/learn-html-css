@@ -23,17 +23,21 @@ div{
 
 /* flex를 활용할 경우 */
 .lion{
-  inline-size: 400px;
+  inline-size: 500px;
+  block-size: 200px;
   margin-block: 20px;
   box-shadow: 0 0 0 10px red;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* flex-direction, flex-wrap 속성의 단축 속성 */
   flex-flow: row wrap;
+  /* padding: 0 20px; */
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+
 
   .lion-item{
-    inline-size: 150px;
+    inline-size: 200px;
   }
 }
 
@@ -46,4 +50,14 @@ div{
   .like-item{
     float: inline-end;
   }
+}
+
+/* Normal Flow 레이아웃 */
+.bootcamp{
+  margin-block: 20px;
+  box-shadow: 0 0 0 10px green;
+  block-size: 200px;
+  inline-size: 400px;
+  text-align: center;
+  align-content: center;
 }
